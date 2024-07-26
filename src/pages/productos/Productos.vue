@@ -75,7 +75,7 @@ const photos = ref([
 
 ]);
 
-const wapp = `https://wa.me/1125588706?text=`
+const wapp = `https://wa.me/+5401125588706?text=`
 </script>
 
 <style scoped lang="scss">
@@ -120,6 +120,21 @@ img {
             opacity: 100%;
             font-size: .9em;
         }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .producto {
+        width: 150px;
+    }
+
+    .photos {
+        grid-template-columns: repeat(auto-fill, 150px) !important;
     }
 }
 </style>
